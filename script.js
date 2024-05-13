@@ -1,6 +1,9 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
+canvas.width=innerWidth/2;
+canvas.height=canvas.width
+
 let startPoint = null, endPoint = null, path = [[],[]];
 let map = Array.from({ length: 10 }, () => Array.from({ length: 10 }, () => (0)));
 // 0 - Empty
